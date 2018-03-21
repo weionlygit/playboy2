@@ -48,7 +48,7 @@ html {
     .page-bar h1{font-size: 13rem}
 }
 
-
+.hide{display: none}
 /*主页的大框架*/
 .main-page{
     width: 100vw;
@@ -75,7 +75,8 @@ html {
     position: fixed;
     right: 3%;
     top: 5%;
-    z-index: 1;
+    z-index: 100;
+    cursor: pointer;
 }
 .main-page .nav span{
     display: block;
@@ -102,3 +103,42 @@ html {
     top: 38vh;
     text-align: center;
 }
+
+/*导航具体的盒子*/
+.nav-page{
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.container .row div{
+    height: 28vh;
+    border: #3A393B solid 1px;
+}
+.container .row div h3{
+    margin: 0;
+    text-align: center;
+    font: normal 2.2rem "Microsoft Himalaya";
+    color: #ffffff;
+    height: 28vh;
+    line-height: 28vh;
+}
+/*导航里面最下边的内容*/
+.nav-page-footer{
+    width: 100%;
+    height: 10vh;
+    margin-top: 6.2vw;
+    text-align: center;
+}
+.nav-page-footer h5,.nav-page-footer p{
+    height: 3vh;
+    font: normal 1.7rem "Microsoft Himalaya";
+    color: #337ab7;
+    opacity: 0.5;
+}
+
+
