@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style:none;
+}
+a{
+    text-decoration: none;
+}
+html {
+    font-size : 16px;
+}
+
+/*手机、iPad*/
+@media only screen and (max-width:768px){
+    html {
+        font-size: 10px;
+    }
+    .page-bar{
+        height: 100vh;
+    }
+    .page-bar .title{
+        bottom: 17rem;
+    }
+    .page-bar h1{font-size: 7rem}
+}
+/*电脑*/
+@media only screen and (min-width: 768px){
+
+    html {
+         font-size: 17px;
+     }
+    .page-bar{
+        height: 51vw;
+    }
+    .page-bar .title{
+        bottom: 10rem;
+    }
+    .page-bar h1{font-size: 9rem}
+
+}
+@media only screen and (min-width: 1200px){
+    .page-bar .title{
+        bottom: 24rem;
+    }
+    .page-bar h1{font-size: 11rem}
+}
+
+
+/*主页的大框架*/
+.main-page{
+    width: 100vw;
+    /*height: 300vh;*/
+    border: blue solid 1px;
+}
+.page-bar{
+    width: 100vw;
+    /*border:red solid 1px;*/
+    position: relative;
+}
+.page-bar img{
+    width: 100%;
+    height: 100%;
+}
+/*主页第一栏*/
+.page-bar .header{
+    width: 5rem;
+    height: 5rem;
+    border: green solid 1px;
+    position: fixed;
+    left: 2%;
+    top: 2%;
+}
+.page-bar .nav{
+    width: 4rem;
+    height: 4rem;
+    border: green solid 1px;
+    position: fixed;
+    right: 2%;
+    top: 2%;
+}
+.page-bar .nav {
+    width: 100%;
+    height: 100%;
+}
+.page-bar .title{
+    width: 100%;
+    height: 14rem;
+    /*border: red solid 1px;*/
+    position: absolute;
+}
+.page-bar h1{
+    top: 38vh;
+    text-align: center;
+
+}
+.page-bar h2{
+    font: bold 2.5rem "Microsoft Himalaya";
+    top: 37vh;
+    text-align: center;
+}

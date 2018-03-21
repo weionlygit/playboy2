@@ -6,19 +6,36 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1"><!--响应手机屏幕-->
     <title>PlayBoy</title>
-    <link rel="stylesheet" href="./public/css/main.css">
+    <link rel="stylesheet" href="public/css/index.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap.css">
     <link rel="icon" href="./public/images/playboy.ico">
 </head>
 <body>
     <div class="main-page">
         <div class="page-bar">
-            <img src="./public/images/top1.jpg" alt="">
+            <div class="header"><h3>PlayBoy</h3></div>
+            <div class="nav"><span class="glyphicon glyphicon-th"></span></div>
+            <div class="title"><h1>PLAYBOY</h1></div>
+
+
+            
+            <!--响应式布局解决图片问题-->
+            <picture alt="image description">
+                <source src="./public/images/top1.jpg" media="(max-width: 768px)">
+                <img src="./public/images/top11.jpg" alt="image description"><!--默认情况显示图片-->
+            </picture>
         </div>
         <div class="page-bar">
-            <img src="./public/images/首页2.png" alt="">
+            <picture alt="image description">
+                <source src="./public/images/bottom.jpg" media="(max-width: 768px)">
+                <img src="./public/images/bottom11.jpg" alt="image description"><!--默认情况显示图片-->
+            </picture>
         </div>
         <div class="page-bar">
-            <img src="./public/images/首页3.png" alt="">
+            <picture alt="image description">
+                <source src="./public/images/last.jpg" media="(max-width: 768px)">
+                <img src="./public/images/last11.jpg" alt="image description"><!--默认情况显示图片-->
+            </picture>
         </div>
 
     </div>
