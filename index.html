@@ -12,28 +12,25 @@
 </head>
 <body>
     <div class="main-page">
+        <div class="logo"><img src="public/images/logo.png" alt=""></div>
+        <div class="nav"><span class="glyphicon glyphicon-th"></span></div>
         <div class="page-bar">
-            <div class="header"><h3>PlayBoy</h3></div>
-            <div class="nav"><span class="glyphicon glyphicon-th"></span></div>
             <div class="title"><h1>PLAYBOY</h1></div>
-
-
-            
             <!--响应式布局解决图片问题-->
-            <picture alt="image description">
-                <source src="./public/images/top1.jpg" media="(max-width: 768px)">
+            <picture>
+                <source srcset="./public/images/top1.jpg" media="(max-width: 770px)">
                 <img src="./public/images/top11.jpg" alt="image description"><!--默认情况显示图片-->
             </picture>
         </div>
         <div class="page-bar">
-            <picture alt="image description">
-                <source src="./public/images/bottom.jpg" media="(max-width: 768px)">
-                <img src="./public/images/bottom11.jpg" alt="image description"><!--默认情况显示图片-->
+            <picture>
+                <source srcset="./public/images/bottom.jpg" media="(max-width: 770px)">
+                <img src="./public/images/bottom11.jpg"><!--默认情况显示图片-->
             </picture>
         </div>
         <div class="page-bar">
-            <picture alt="image description">
-                <source src="./public/images/last.jpg" media="(max-width: 768px)">
+            <picture>
+                <source srcset="./public/images/last.jpg" media="(max-width: 770px)">
                 <img src="./public/images/last11.jpg" alt="image description"><!--默认情况显示图片-->
             </picture>
         </div>
