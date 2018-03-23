@@ -24,6 +24,11 @@ html {
         bottom: 18.5rem;
     }
     .page-bar h1{font-size: 5rem}
+    /*登录中间的盒子*/
+    .bg .center{
+        width: 25rem;
+        height: 20rem;
+    }
 }
 /*电脑*/
 @media only screen and (min-width: 770px){
@@ -39,6 +44,11 @@ html {
         bottom: 27rem;
     }
     .page-bar h1{font-size: 9rem}
+    /*登录中间的盒子*/
+    .bg .center{
+        width: 40rem;
+        height: 24rem;
+    }
 
 }
 @media only screen and (min-width: 1600px){
@@ -140,5 +150,34 @@ html {
     color: #337ab7;
     opacity: 0.5;
 }
+/*登录页面*/
+.bg{
+    width: 100vw;
+    height: 100vh;
+    background: url("../images/top1.jpg");
+    background-size: cover;
+    opacity: 0.5;
+    position: fixed;
+}
+.bg .center{
+    /*width: 40rem;*/
+    /*height: 24rem;*/
+    margin: 25vh auto;
+    border: red solid 1px;
+    opacity: 1;
 
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+}
+.center .photo{
+    height: 100%;
+    flex: 1;
+    border: blue solid 1px;
+}
+.center .login{
+    height: 100%;
+    flex: 1;
+    border: blue solid 1px;
+}
 
