@@ -171,12 +171,13 @@ html {
     position:absolute;
 }
 .bg .center{
-    margin:32vh 22vw 0vh;
     display: flex;
     flex-direction: row;
     justify-items: center;
     background: white;
     position: absolute;
+    top: 30vh;
+    left: 25vw;
 }
 .center .photo{
     height: 100%;
@@ -254,8 +255,6 @@ html {
     display: inline-block;
     margin-top: 6rem;
     cursor: pointer;
-
-
 }
 .clothing .container li{
     height: 25rem;
