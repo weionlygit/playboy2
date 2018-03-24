@@ -26,8 +26,8 @@ html {
     .page-bar h1{font-size: 5rem}
     /*登录中间的盒子*/
     .bg .center{
-        width: 25rem;
-        height: 20rem;
+        width: 33rem;
+        height: 22rem;
     }
 }
 /*电脑*/
@@ -46,8 +46,8 @@ html {
     .page-bar h1{font-size: 9rem}
     /*登录中间的盒子*/
     .bg .center{
-        width: 40rem;
-        height: 24rem;
+        width: 58vw;
+        height: 39vh;
     }
 
 }
@@ -56,6 +56,11 @@ html {
         bottom: 30rem;
     }
     .page-bar h1{font-size: 13rem}
+    /*大于1600时，中间的登录显示太长，不好看*/
+    .bg .center{
+        width: 48vw;
+        height: 39vh;
+    }
 }
 
 .hide{display: none}
@@ -125,11 +130,11 @@ html {
     z-index: 2;
 }
 
-.container .row div{
+.nav-page .container .row div{
     height: 28vh;
     border: #3A393B solid 1px;
 }
-.container .row div h3{
+.nav-page .container .row div h3{
     margin: 0;
     text-align: center;
     font: normal 2.2rem "Microsoft Himalaya";
@@ -154,30 +159,98 @@ html {
 .bg{
     width: 100vw;
     height: 100vh;
-    background: url("../images/top1.jpg");
+    background: url("../images/login-bcg.jpg");
     background-size: cover;
     opacity: 0.5;
     position: fixed;
 }
 .bg .center{
-    /*width: 40rem;*/
-    /*height: 24rem;*/
-    margin: 25vh auto;
-    border: red solid 1px;
-    opacity: 1;
-
+    margin:33vh auto;
     display: flex;
     flex-direction: row;
     justify-items: center;
+    background: white;
 }
 .center .photo{
     height: 100%;
     flex: 1;
-    border: blue solid 1px;
+}
+.photo img{
+    width: 100%;
+    height: 100%;
 }
 .center .login{
     height: 100%;
     flex: 1;
-    border: blue solid 1px;
 }
 
+.login h3{
+    display: block;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    font: bold 2.5rem "Microsoft Himalaya";
+}
+.login .input1,.login .input2 {
+    display: block;
+    margin-bottom: 1.7rem;
+    margin-left: 2rem;
+    width: 66%;
+    height: 1.9rem;
+    padding-left: 1.5rem;
+    border: #9d9d9d solid 1px;
+}
+
+.login  .input1{
+    background: url("../images/注册登录-用户名.png");
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+    background-position:0.2rem 0.4rem;
+}
+.login  .input2{
+    background: url("../images/密码.png");
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+    background-position:0.2rem 0.4rem;
+
+}
+.login button{
+    width:72%;
+    height: 2.2rem;
+    margin-left: 2rem;
+    border: none;
+    background: #0f0f0f;
+    color: white;
+
+}
+.login p{
+    display: block;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    width: 70%;
+    font: normal 0.6rem "Microsoft Himalaya";
+}
+
+
+/*商品页面*/
+.clothing .container{
+    padding-bottom: 10rem;
+}
+.clothing .clothing-header{
+    width: 100vw;
+    height: 13.5rem;
+    text-align: center;
+    margin: 0;
+}
+
+.clothing .clothing-header h1{
+    display: inline-block;
+    margin-top: 6rem;
+    cursor: pointer;
+
+
+}
+.clothing .container li{
+    height: 25rem;
+    border: blue solid 1px;
+    cursor: pointer;
+}
