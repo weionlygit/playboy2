@@ -156,20 +156,27 @@ html {
     opacity: 0.5;
 }
 /*登录页面*/
-.bg{
+/*.bg{*/
+    /*width: 100vw;*/
+    /*height: 100vh;*/
+    /*!*background: url("../images/login-bcg.jpg");*!*/
+    /*!*background-size: cover;*!*/
+    /*!*opacity: 0.5;*!*/
+    /*!*position: fixed;*!*/
+/*}*/
+.bg  picture img{
     width: 100vw;
     height: 100vh;
-    background: url("../images/login-bcg.jpg");
-    background-size: cover;
     opacity: 0.5;
-    position: fixed;
+    position:absolute;
 }
 .bg .center{
-    margin:33vh auto;
+    margin:32vh 22vw 0vh;
     display: flex;
     flex-direction: row;
     justify-items: center;
     background: white;
+    position: absolute;
 }
 .center .photo{
     height: 100%;
@@ -187,6 +194,7 @@ html {
 .login h3{
     display: block;
     margin-top: 2rem;
+    margin-bottom: 1.5rem;
     margin-left: 2rem;
     font: bold 2.5rem "Microsoft Himalaya";
 }
