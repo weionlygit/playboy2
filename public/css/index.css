@@ -63,7 +63,9 @@ html {
     }
 }
 
-.hide{display: none}
+.show{display: block!important;}
+.hide{display: none!important;}
+
 /*主页的大框架*/
 .main-page{
     width: 100vw;
